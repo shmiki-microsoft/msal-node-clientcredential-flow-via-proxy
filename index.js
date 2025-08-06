@@ -17,7 +17,6 @@ const msalConfig = {
         },
         networkClient: new HttpClientNodeFetch(),
         // networkClient: new HttpClientAxios(),
-        // networkClient: new HttpClient(process.env.HTTP_PROXY),
     },
 };
 

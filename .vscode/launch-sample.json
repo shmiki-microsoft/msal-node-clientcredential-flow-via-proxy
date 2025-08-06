@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\index.js",
+            "env": {
+                "CLOUD_INSTANCE" :"https://login.microsoftonline.com/",
+                "TENANT_ID": "your-tenant-id",
+                "CLIENT_ID": "your-client-id",
+                "CLIENT_SECRET": "your-client-secret",
+                "HTTP_PROXY": "your proxy server ex) http://localhost:8888",
+                "NODE_TLS_REJECT_UNAUTHORIZED": "0",// for Capturing Fiddler traces
+            }
+        }
+    ]
+}
